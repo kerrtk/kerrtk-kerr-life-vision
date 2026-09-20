@@ -115,8 +115,7 @@ export const dawson = {
   name: "Dawson Lee Kerr",
   short: "Dawson",
   line: "Kerr Life Vision began with the loss of my nephew Dawson, at 21.",
-  // Flip to true once public/dawson.jpg is in the repo.
-  photo: false,
+  photo: true,
   // TK's own words go here when he is ready. Leave empty and the page
   // shows only his name and his photo, which is enough.
   words: [] as string[],
