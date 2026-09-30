@@ -92,7 +92,7 @@ export const brands: Brand[] = [
       "**Please Tell Me Why, Father** is the story of losing Dawson, and of asking God the question in the title without getting a clean answer back. Part memoir, part companion for anybody sitting in the same place. It is the most personal thing I have written.",
       "**Heaven's Blueprint** came later, and it is the more practical one. I wrote it from the front seat of a delivery route, hauling oxygen tanks and hospital beds into houses where somebody was fighting for one more good day. Ten chapters on calling, health, faith, relationships, and the legacy you leave.",
       "**Unwhistled** is the other side of me entirely. An investigative look at officiating in the WNBA, published under the Game Integrity Journal imprint. It exists because something did not add up and nobody seemed willing to say so plainly.",
-      "All three are on Amazon.",
+      "All three are on Amazon. As an Amazon Associate I earn from qualifying purchases.",
     ],
     href: "https://www.amazon.com",
     hrefLabel: "Find them on Amazon",
@@ -201,8 +201,9 @@ export const affiliate: { intro: string; sections: LegalSection[] } = {
     {
       heading: "Affiliate links",
       body: [
-        "Right now, the links on this site are plain links. I am not paid a referral commission when you click them.",
-        "If I ever add links that pay me a commission, I will mark them clearly and say so on the page where they appear.",
+        "I am an Amazon Associate. As an Amazon Associate I earn from qualifying purchases.",
+        "That means some links to Amazon on this site may be affiliate links. If you buy through one, I may earn a small commission, and it costs you nothing extra.",
+        "Nothing on this site is ranked or recommended because of what it pays. If a link pays me, I will say so on the page where it appears.",
       ],
     },
     {

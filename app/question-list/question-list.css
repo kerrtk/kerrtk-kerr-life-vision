@@ -1,0 +1,60 @@
+.qlist {
+  list-style: none;
+  counter-reset: q;
+  padding: 0;
+  margin: 2.5rem 0;
+  max-width: var(--measure);
+}
+
+.qlist li {
+  counter-increment: q;
+  position: relative;
+  padding: 0 0 1.75rem 3rem;
+  margin-bottom: 1.75rem;
+  border-bottom: 1px solid var(--rule);
+  break-inside: avoid;
+}
+
+.qlist li::before {
+  content: counter(q);
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #9a7c14;
+}
+
+.qlist h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.qlist p {
+  margin: 0;
+  color: #34302b;
+}
+
+@media print {
+  .nav,
+  .footer,
+  .outlink {
+    display: none;
+  }
+  body {
+    background: #fff;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+  .page-head {
+    padding: 0 0 1rem;
+  }
+  .page-body {
+    padding: 1rem 0;
+  }
+  .qlist li {
+    padding-bottom: 0.9rem;
+    margin-bottom: 0.9rem;
+  }
+}

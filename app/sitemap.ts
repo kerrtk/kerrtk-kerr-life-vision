@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/story",
     "/contact",
+    "/question-list",
     "/privacy-policy",
     "/affiliate-disclosure",
     ...brands.map((b) => `/${b.slug}`),

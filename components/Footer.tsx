@@ -30,6 +30,9 @@ export default function Footer() {
                 <Link href="/story">Story</Link>
               </li>
               <li>
+                <Link href="/question-list">The Question List</Link>
+              </li>
+              <li>
                 <Link href="/dawson">For Dawson</Link>
               </li>
               <li>

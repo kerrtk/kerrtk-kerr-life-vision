@@ -58,6 +58,21 @@ export default function Home() {
       <section className="section">
         <div className="wrap">
           <div className="prose">
+            <p className="eyebrow eyebrow-wheat">Free</p>
+            <p style={{ marginTop: "1rem" }}>
+              Twelve questions to ask before the next decision about a
+              parent&apos;s care.
+            </p>
+            <Link href="/question-list" className="outlink">
+              The Question List
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="wrap">
+          <div className="prose">
             <p className="eyebrow eyebrow-wheat">In memory</p>
             <p style={{ marginTop: "1rem" }}>{dawson.line}</p>
             <Link href="/dawson" className="outlink">
