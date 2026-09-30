@@ -130,3 +130,92 @@ export const nav = [
   { href: "/books", label: "Books" },
   { href: "/contact", label: "Contact" },
 ];
+
+export type LegalSection = { heading: string; body: string[] };
+
+export const legalUpdated = "September 30, 2026";
+
+export const privacy: { intro: string; sections: LegalSection[] } = {
+  intro:
+    "This is a small personal site, and I keep what I collect to a minimum. Here is exactly what happens with your information when you visit.",
+  sections: [
+    {
+      heading: "Who I am",
+      body: [
+        "This site is run by Todd Kerr in Urbandale, Iowa. If you have a question about anything on this page, write to kerr.systems@gmail.com.",
+      ],
+    },
+    {
+      heading: "What I collect",
+      body: [
+        "There are no forms, accounts, or sign-ups on this site, so I do not collect your name, email address, or any other personal details through it.",
+        "If you email me, I receive your address and whatever you write. I use it to answer you, and I do not sell it, rent it, or add you to a list without asking.",
+      ],
+    },
+    {
+      heading: "What happens automatically",
+      body: [
+        "The site is hosted by Vercel. Like any web host, Vercel records basic technical information when a page loads, such as your IP address, browser type, and the page you asked for. That is used to keep the site running and secure.",
+        "The fonts on this site are loaded from Google Fonts, which means your browser connects to Google to fetch them.",
+        "I do not run advertising, and I do not currently use analytics or tracking cookies on this site.",
+      ],
+    },
+    {
+      heading: "Links to other sites",
+      body: [
+        "This site links to Aging With Honor, Kerr Systems, Amazon, and social pages on Facebook and LinkedIn. Once you click through, that site's own privacy policy applies, not this one.",
+      ],
+    },
+    {
+      heading: "Children",
+      body: [
+        "This site is written for adults and is not aimed at children under 13. I do not knowingly collect information from them.",
+      ],
+    },
+    {
+      heading: "Your choices",
+      body: [
+        "If you have emailed me and want your messages deleted, tell me and I will delete them.",
+      ],
+    },
+    {
+      heading: "Changes",
+      body: [
+        "If what I collect ever changes, for example if I add a newsletter, I will update this page first and show the date above.",
+      ],
+    },
+  ],
+};
+
+export const affiliate: { intro: string; sections: LegalSection[] } = {
+  intro:
+    "I would rather tell you plainly where I have a stake than have you wonder.",
+  sections: [
+    {
+      heading: "What I sell",
+      body: [
+        "I am the author of Please Tell Me Why, Father, Heaven's Blueprint, and Unwhistled. When you buy one of them, I earn the author's share of that sale.",
+        "I also own and run Kerr Systems and Marketplace Global. When this site points you to either one, I have a direct financial interest in it.",
+      ],
+    },
+    {
+      heading: "Affiliate links",
+      body: [
+        "Right now, the links on this site are plain links. I am not paid a referral commission when you click them.",
+        "If I ever add links that pay me a commission, I will mark them clearly and say so on the page where they appear.",
+      ],
+    },
+    {
+      heading: "Aging With Honor",
+      body: [
+        "Aging With Honor is free to read. Its own pages carry their own disclosures where they are needed.",
+      ],
+    },
+    {
+      heading: "Questions",
+      body: [
+        "If something here is unclear, write to kerr.systems@gmail.com and I will answer you directly.",
+      ],
+    },
+  ],
+};
