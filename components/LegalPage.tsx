@@ -1,3 +1,4 @@
+import "./legal.css";
 import { legalUpdated, type LegalSection } from "@/lib/content";
 
 export default function LegalPage({
