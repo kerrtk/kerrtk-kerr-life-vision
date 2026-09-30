@@ -39,8 +39,12 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-base">
-          <span>
-            &copy; {new Date().getFullYear()} {site.person}
+          <span className="footer-social">
+            <span>
+              &copy; {new Date().getFullYear()} {site.person}
+            </span>
+            <Link href="/privacy-policy">Privacy</Link>
+            <Link href="/affiliate-disclosure">Disclosure</Link>
           </span>
           <span className="footer-social">
             {social.map((s) => (

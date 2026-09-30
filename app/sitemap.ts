@@ -3,7 +3,14 @@ import { site, brands } from "@/lib/content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const paths = ["", "/story", "/contact", ...brands.map((b) => `/${b.slug}`)];
+  const paths = [
+    "",
+    "/story",
+    "/contact",
+    "/privacy-policy",
+    "/affiliate-disclosure",
+    ...brands.map((b) => `/${b.slug}`),
+  ];
   return paths.map((p) => ({
     url: `${site.url}${p}`,
     lastModified: now,
