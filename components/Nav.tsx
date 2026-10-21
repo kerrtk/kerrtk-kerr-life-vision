@@ -6,7 +6,8 @@ export default function Nav() {
     <header className="nav">
       <div className="wrap nav-inner">
         <Link href="/" className="wordmark">
-          Kerr Life Vision<span>.</span>
+          <img src="/klv-mark.svg" alt="" className="wordmark-mark" />
+          Kerr Life Vision
         </Link>
         <nav className="nav-links" aria-label="Main">
           {nav

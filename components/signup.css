@@ -39,9 +39,9 @@
 }
 
 .signup input:focus-visible {
-  outline: 2px solid var(--wheat);
+  outline: 2px solid var(--navy-glow);
   outline-offset: 1px;
-  border-color: var(--wheat);
+  border-color: var(--navy-glow);
 }
 
 .signup .signup-trap {
@@ -66,7 +66,7 @@
   transition: background 0.15s ease;
 }
 
-.signup button:hover, .signup button:focus-visible { background: #34302b; }
+.signup button:hover, .signup button:focus-visible { background: var(--navy-glow); }
 .signup button:disabled { opacity: 0.6; cursor: default; }
 
 .signup-note {
@@ -80,6 +80,6 @@
   font-family: var(--serif);
   font-size: 1.125rem;
   color: var(--ink);
-  border-left: 2px solid var(--wheat);
+  border-left: 2px solid var(--ink);
   padding-left: 1rem;
 }

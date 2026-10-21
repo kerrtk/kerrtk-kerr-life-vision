@@ -21,8 +21,13 @@ are a single-file edit.
 
 ## Brand
 
-Ink & Wheat — Ink `#1A1815`, Wheat `#C9A227`, Paper `#FAF7F0`, Stone `#6B6660`.
-Spectral for headings, Inter for body.
+Kerr Life Vision brand (October 2026): Deep Navy `#16324A`, Navy Glow
+`#193E5B` (center of gradients), Cream `#EDE8DE` (logo and text on navy).
+Spectral for headings, Inter for body. Tokens live at the top of
+`app/globals.css`; the navy-and-cream layout lives in `app/vision.css`.
+
+The logo mark (eye, figure, leaves) is redrawn as an editable SVG at
+`public/klv-mark.svg`; the favicon is `app/icon.svg`.
 
 ## The memorial page
 

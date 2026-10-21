@@ -33,14 +33,12 @@ function CardVisual({ slug }: { slug: string }) {
   if (slug === "kerr-systems") {
     return (
       <div className="card-visual visual-ink">
-        <span className="visual-word">
-          Kerr Systems<span>.</span>
-        </span>
+        <span className="visual-word">Kerr Systems</span>
       </div>
     );
   }
   return (
-    <div className="card-visual visual-wheat">
+    <div className="card-visual visual-glow">
       <span className="visual-word">One bag, one child.</span>
     </div>
   );
@@ -64,7 +62,7 @@ export default function Home() {
               ))}
             </ul>
             <div className="hero-actions">
-              <Link href="#legacy-blueprint" className="btn btn-wheat">
+              <Link href="#legacy-blueprint" className="btn btn-cream">
                 Get the free journal
               </Link>
               <Link href="/story" className="btn btn-ghost">
@@ -72,27 +70,36 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <figure className="hero-photo">
-            <img src={images.hero} alt="" />
-          </figure>
+          <div className="hero-logo">
+            <img src="/klv-mark.svg" alt="Kerr Life Vision" />
+            <p className="hero-logo-word">
+              Kerr
+              <span>Life Vision</span>
+            </p>
+          </div>
         </div>
       </section>
 
       <section className="section">
-        <div className="wrap">
-          <div className="section-head">
-            <p className="eyebrow eyebrow-wheat">Why any of this exists</p>
+        <div className="wrap split">
+          <div>
+            <div className="section-head">
+              <p className="eyebrow eyebrow-wheat">Why any of this exists</p>
+            </div>
+            <div className="prose">
+              {intro.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+              <p>
+                <Link href="/story" className="outlink">
+                  Read the longer version
+                </Link>
+              </p>
+            </div>
           </div>
-          <div className="prose">
-            {intro.map((p, i) => (
-              <p key={i}>{p}</p>
-            ))}
-            <p>
-              <Link href="/story" className="outlink">
-                Read the longer version
-              </Link>
-            </p>
-          </div>
+          <figure className="split-photo">
+            <img src={images.hero} alt="" />
+          </figure>
         </div>
       </section>
 
@@ -118,7 +125,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section band-wheat">
+      <section className="section band-glow">
         <div className="wrap band-inner">
           <div>
             <p className="eyebrow">Free</p>
@@ -128,7 +135,7 @@ export default function Home() {
               parent&apos;s care.
             </p>
           </div>
-          <Link href="/question-list" className="btn btn-ink">
+          <Link href="/question-list" className="btn btn-cream">
             Read the questions
           </Link>
         </div>
