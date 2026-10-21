@@ -11,6 +11,43 @@ export const site = {
 
 export const anchors = ["Faith", "Family", "Dignity", "Purpose"];
 
+// Images. The first four still live on the old WordPress site and must be
+// copied into public/img/ before kerrlifevision.com is pointed here, or they
+// will break when WordPress goes away. The seal and the Unwhistled cover come
+// from TK's own live sites.
+export const images = {
+  hero: "https://kerrlifevision.com/wp-content/uploads/2026/07/IMG_20260613_090228_929.webp",
+  legacy: "https://kerrlifevision.com/wp-content/uploads/2025/06/1000008353-compressed.jpg",
+  coverPtmwf:
+    "https://kerrlifevision.com/wp-content/uploads/elementor/thumbs/Ebook-cover-1-compressed-r9e6wd6eloekekbri1bln37ixi8vvqrmepwzwm1nro.jpg",
+  coverHeavens:
+    "https://kerrlifevision.com/wp-content/uploads/elementor/thumbs/heavens_blueprint_front_cover_EBOOK-rpz90dx8anvck81xxnyurvl3rpl12ukm1tziogu20w.png",
+  coverUnwhistled: "https://www.gameintegrityjournal.com/media/unwhistled-cover.png",
+  awhSeal: "https://www.agingwithhonor.com/awh-seal.png",
+  dawson: "/dawson.jpg",
+};
+
+export const books = [
+  {
+    title: "Please Tell Me Why, Father",
+    note: "Grief, faith, and the question in the title",
+    cover: images.coverPtmwf,
+    href: "https://a.co/d/gNb1Dxg",
+  },
+  {
+    title: "Heaven's Blueprint",
+    note: "Ten chapters on calling, health, faith, and legacy",
+    cover: images.coverHeavens,
+    href: "https://www.amazon.com/s?k=Heaven%27s+Blueprint+Todd+Kerr",
+  },
+  {
+    title: "Unwhistled",
+    note: "An investigative look at WNBA officiating",
+    cover: images.coverUnwhistled,
+    href: "https://www.gameintegrityjournal.com",
+  },
+];
+
 export const hero = {
   eyebrow: "Kerr Life Vision · Todd Kerr · Central Iowa",
   title: "Find Peace. Build Purpose. Live with Vision.",
