@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { hero, anchors, intro, brands, dawson } from "@/lib/content";
+import { hero, anchors, intro, brands, dawson, signup } from "@/lib/content";
+import Signup from "@/components/Signup";
 
 export default function Home() {
   return (
@@ -67,6 +68,17 @@ export default function Home() {
               The Question List
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="section" id="legacy-blueprint">
+        <div className="wrap">
+          <div className="prose">
+            <p className="eyebrow eyebrow-wheat">{signup.eyebrow}</p>
+            <h2 style={{ marginTop: "0.75rem" }}>{signup.title}</h2>
+            <p>{signup.lede}</p>
+          </div>
+          <Signup />
         </div>
       </section>
 

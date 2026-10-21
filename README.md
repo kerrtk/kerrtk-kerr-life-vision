@@ -41,9 +41,25 @@ npm install
 npm run dev
 ```
 
+## The Legacy Blueprint sign-up
+
+The homepage form posts to `app/api/subscribe/route.ts`, which adds the person
+to a Brevo list. It needs two environment variables set in Vercel:
+
+- `BREVO_API_KEY` — Brevo: Settings → SMTP & API → API Keys
+- `BREVO_LIST_ID` — Brevo: Contacts → Lists (the numeric ID)
+
+Until both are set, the form tells visitors sign-up is not switched on and
+gives them the email address. It never reports a success it did not get.
+Delivering the journal itself is a Brevo automation on that list.
+
+## Redirects from the old WordPress site
+
+Set in `next.config.mjs`. The three 2025 posts moved to Aging With Honor
+(`www.agingwithhonor.com/blog/<same-slug>`); `/blog`, `/category/*` and
+`/tag/*` go to the Aging With Honor journal; `/about-us` goes to `/story`;
+`/contact-us` goes to `/contact`.
+
 ## Still to do
 
-- Privacy policy and affiliate disclosure pages (required before DNS cutover)
-- The three blog posts from the old WordPress site, kept at their current URLs
-- Lead magnet, wired to Brevo (the `mailin` plugin on the old site is already Brevo)
-- Redirect map for the nine indexed URLs, then point kerrlifevision.com here
+- Point kerrlifevision.com at this Vercel project (DNS at Hostinger)

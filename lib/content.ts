@@ -133,7 +133,17 @@ export const nav = [
 
 export type LegalSection = { heading: string; body: string[] };
 
-export const legalUpdated = "September 30, 2026";
+export const legalUpdated = "October 21, 2026";
+
+export const signup = {
+  eyebrow: "Free",
+  title: "The Legacy Blueprint",
+  lede: "A free guided journal for the life you are still building, plus a preview of Heaven's Blueprint, sent to your inbox.",
+  button: "Send me the journal",
+  fine: "No spam. Unsubscribe any time.",
+  success: "You're in. Watch your inbox for The Legacy Blueprint.",
+  failure: "That did not go through. Please try again, or email kerr.systems@gmail.com.",
+};
 
 export const privacy: { intro: string; sections: LegalSection[] } = {
   intro:
@@ -148,7 +158,8 @@ export const privacy: { intro: string; sections: LegalSection[] } = {
     {
       heading: "What I collect",
       body: [
-        "There are no forms, accounts, or sign-ups on this site, so I do not collect your name, email address, or any other personal details through it.",
+        "There are no accounts on this site. The one form is the sign-up for The Legacy Blueprint. If you use it, I receive your first name (if you give it) and your email address.",
+        "Those are stored with Brevo, the email service I use, so I can send you the journal and occasional notes from me. Every email has an unsubscribe link, and I do not sell, rent, or share your address with anyone.",
         "If you email me, I receive your address and whatever you write. I use it to answer you, and I do not sell it, rent it, or add you to a list without asking.",
       ],
     },
@@ -175,13 +186,13 @@ export const privacy: { intro: string; sections: LegalSection[] } = {
     {
       heading: "Your choices",
       body: [
-        "If you have emailed me and want your messages deleted, tell me and I will delete them.",
+        "You can unsubscribe from any email with one click. If you want your address removed entirely, or your emails to me deleted, tell me and I will do it.",
       ],
     },
     {
       heading: "Changes",
       body: [
-        "If what I collect ever changes, for example if I add a newsletter, I will update this page first and show the date above.",
+        "If what I collect ever changes, I will update this page first and show the date above.",
       ],
     },
   ],
